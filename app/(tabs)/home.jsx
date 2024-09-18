@@ -13,6 +13,7 @@ import { getAllPosts, getLatestPosts } from "../../lib/appwrite";
 
 const Home = () => {
   const { data: posts,refetch } = useAppwrite(getAllPosts);
+  const { data: latestPosts } = useAppwrite(getLatestPosts);
   const [refreshing, setRefreshing] = useState(false);
   const onRefresh = async () => {
     setRefreshing(true);
@@ -60,7 +61,7 @@ const Home = () => {
                 Latest Places
               </Text>
 
-              <Trending posts={[{id:1},{id:2},{id:3}] ?? []} />
+              <Trending posts={latestPosts ?? []} />
             </View>
         </View>
        )}
