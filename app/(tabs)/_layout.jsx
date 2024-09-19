@@ -30,13 +30,13 @@ const TabLayout = () => {
     <>
       <Tabs
         screenOptions={{
-          tabBarActiveTintColor: "#FFA001",
+          tabBarActiveTintColor: "#0D6EFD",
           tabBarInactiveTintColor: "#CDCDE0",
           tabBarShowLabel: false,
           tabBarStyle: {
-            backgroundColor: "#161622",
+            backgroundColor: "#ffffff",
             borderTopWidth: 1,
-            borderTopColor: "#232533",
+            borderTopColor: "#ffffff",
             height: 84,
           },
         }}
@@ -81,7 +81,7 @@ const TabLayout = () => {
               <TabIcon
                 icon={icons.plus}
                 color={color}
-                name="Create"
+                name="Things to Do"
                 focused={focused}
               />
             ),
